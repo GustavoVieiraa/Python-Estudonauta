@@ -9,5 +9,5 @@ from math import floor
 
 print('=' * 5 + 'Valor INTEIRO' + '=' * 5)
 num = float(input('Digite um número real: '))
-print("{:=^20}".format(floor(num)))
+print("O valor digitado foi {} e seu valor inteiro é {:^2}".format(num, floor(num)))
 print('=' * 5 + 'Valor INTEIRO' + '=' * 5)
