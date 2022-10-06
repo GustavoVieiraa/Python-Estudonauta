@@ -5,7 +5,7 @@
 # -> Quantas letras tem o primeiro nome
 
 print('= ' * 5 + 'Informações nome' + ' =' * 5)
-name = str(input('Qual é seu nome: '))
+name = str(input('Qual é seu nome: ')).strip()
 
 espaces = name.count(' ')
 qnt_name = len(name)
