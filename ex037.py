@@ -19,7 +19,13 @@ Informe: """))
 print('=-' * 8 + ' Convertendo... ' + '-=' * 8)
 sleep(3)
 
-if num_int%2 == 1 or num_int%2 == 0:
-    binario_list = [].append(num_int%2)
-    num_int = num_int // 2
-    print(binario_list)
+if base_esc == 1:
+    print('Número {} em binário é: {}'.format(num_int, str(bin(num_int)[2:])))
+elif base_esc == 2:
+    print('Número {} em octal é: {}'.format(num_int, str(oct(num_int)[2:])))
+elif base_esc == 3:
+    print('Número {} em hexadecimal é: {}'.format(num_int, str(hex(num_int)[2:])))
+else:
+    print('Opção invalida, tente novamente!')
+
+print('=-' * 8 + ' Conversão de bases ' + '-=' * 8)
