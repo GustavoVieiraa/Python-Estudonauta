@@ -41,7 +41,7 @@ elif opc_pag == 2:
     Forma de Pagamento: 2x no cartão [sem desconto]
     """.format(val_produto, (val_produto/2)))
 elif opc_pag == 3:
-    juros = ((val_produto*30)/100)
+    juros = ((val_produto*20)/100)
     qt_pag = int(input('|QUANTAS VEZES| '))
     print("""
     Valor Produto: R${:.2f}
