@@ -5,13 +5,12 @@ from time import sleep
 
 
 print('=-' * 5 + ' Impares ' + '-=' * 5)
-
-for verificador in range(0, 500):
-    if (verificador%3) == 0:
-        s_de_multiplos = 0
-        s_de_multiplos = (s_de_multiplos+verificador)
-
+r = 0
+c = 0
+for verificador in range(1, 501, 2):
+    if verificador%3 == 0:
+        r += verificador
+        c += 1
 sleep(5)
 
-print('O valor das somas dos números múltiplos de três de 1 a 500 é\t{}'.format(s_de_multiplos))
-
+print('Todos os {} números impares divisiveis por 3 somados resultam o valor de: {}'.format(c, r))
