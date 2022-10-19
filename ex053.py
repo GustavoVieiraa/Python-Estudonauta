@@ -19,6 +19,8 @@ for v in range(len(frase), 0, -1):
 pali = ''.join(lista_pali)
 
 if pali == frase:
+    print('A frase {} ao invertida é {}'.format(frase, pali))
     print('A frase {} é um Palíndromo!'.format(frase))
 else:
+    print('A frase {} invertida é {}'.format(frase, pali))
     print('A frase {} não é um Palíndromo.'.format(frase))
