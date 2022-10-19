@@ -3,16 +3,16 @@
 
 print('=-' * 6 + ' Verificador de Pesos ' + '-=' * 6)
 
-maior_peso = 0
-menor_peso = 1000
-
 for v in range(1, 7):
     peso = float(input('|PESO| Informe seu peso (Kg): '))
-    if maior_peso < peso:
-        maior_peso = peso 
-    elif menor_peso > peso:
+    if v == 1:
+        maior_peso = peso
         menor_peso = peso
-        print(menor_peso)
+    else:
+        if maior_peso < peso:
+            maior_peso = peso 
+        elif menor_peso > peso:
+            menor_peso = peso
 
 print("""
 O MAIOR peso informado foi {:.1f}Kg
